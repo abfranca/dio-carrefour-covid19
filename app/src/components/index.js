@@ -4,7 +4,7 @@ import Grid from "./Grid";
 import Typography from "./Typography";
 import Skeleton from "./Skeleton";
 import Select from "./Select";
-import MenuIten from "./MenuIten";
+import MenuItem from "./MenuItem";
 
 export {
     Button,
@@ -14,5 +14,5 @@ export {
     Typography,
     Skeleton,
     Select,
-    MenuIten
+    MenuItem
 };

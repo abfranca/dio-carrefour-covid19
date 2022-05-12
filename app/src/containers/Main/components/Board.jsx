@@ -10,11 +10,23 @@ function Board({ data }) {
 
     return (
         <Grid container spacing={4}>
-            <Grid iten xs={12} md={3}>
+            <Grid item xs={12} md={3}>
                 <Card value={getValue(cases)} label='Total de casos' color='#5d78ff' />
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value={getValue(todayDeaths || '0')} label='Óbitos hoje' color='#f7b829' />
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value={getValue(todayCases || '0')} label='Casos hoje' color='#000' />
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value={getValue(deaths)} label='Total de mortos' color='#e95078' />
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value={getValue(recovered)} label='Total de recuperados' color='#67c887' />
             </Grid>
         </Grid>
     )
 };
 
-export default Board;
+export default memo(Board);
