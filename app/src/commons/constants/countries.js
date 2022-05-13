@@ -7,6 +7,11 @@ import WorldFlag from '../../assets/images/world.png';
 
 const COUNTRIES = [
     {
+        label: 'Mundo',
+        value: 'world',
+        flag: WorldFlag
+    },
+    {
         label: 'Alemanha',
         value: 'germany',
         flag: GermanyFlag
@@ -17,6 +22,11 @@ const COUNTRIES = [
         flag: BrazilFlag
     },
     {
+        label: 'China',
+        value: 'china',
+        flag: ChinaFlag
+    },
+    {
         label: 'Estados Unidos',
         value: 'usa',
         flag: UsaFlag
@@ -25,16 +35,6 @@ const COUNTRIES = [
         label: 'Itália',
         value: 'italy',
         flag: ItalyFlag
-    },
-    {
-        label: 'China',
-        value: 'china',
-        flag: ChinaFlag
-    },
-    {
-        label: 'Mundo',
-        value: 'world',
-        flag: WorldFlag
     }
 ];
 
